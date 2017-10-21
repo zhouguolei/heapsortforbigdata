@@ -4,9 +4,7 @@ package heapsortutil;
  * Created by zgl on 17-10-20.
  */
 public class Sort {
-//    static float[] data={
-//            1111.01f,22002.01f,123f,456f,34545f,4758f,8763f,2341f,8888f,9737f
-//    };
+
     float[] data=null;
 
     public float[] getData() {
@@ -52,17 +50,5 @@ public class Sort {
         data[m]=data[n];
         data[n]=temp;
     }
-//
-//    public static void main(String[] args) {
-//        float[] data={
-//                1111.01f,22002.01f,123f,456f,34545f,4758f,8763f,2341f,8888f,9737f
-//        };
-//        Sort sort = new Sort();
-//        sort.builHeap(data);
-//        for (int i=0;i<10;i++){
-//            System.out.println(data[i]);
-//        }
-//
-//
-//    }
+
 }
