@@ -1,1 +1,12 @@
 # heapsortforbigdata
+
+简单说明:
+一共三个maven工程即 testclient springmvctest sortserver
+client随机生成1000000个float的数,提交1000次,每次提交1000个数
+在springmvctest中提供restful接口,向sortserver提数据,分批次排序
+最后master服务器收集各服务器上的前1000个数,在restful接口即程序中的end接口中给最后
+3000个数排序,排好后将1000个最大的数传给客户端
+
+排序说明:
+排序使用堆排,先构建1000个数的小顶堆,从剩下的数中一次与小顶堆的最后一个元素比较
+如果剩下的数比小顶堆的第一个元素大,就覆盖掉.最后在堆中的数就是最大的1000个数了.
